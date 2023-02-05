@@ -37,6 +37,7 @@ const corsOptions = {
     "http://localhost:8080",
     "http://localhost:3000",
     "https://cloudinary.com/",
+    "https://photography-portfolio-eryj.onrender.com
   ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
   allowedHeaders: ["Content-Type", "Authorization"],
