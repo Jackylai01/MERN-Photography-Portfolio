@@ -15,7 +15,7 @@ const initialState = {
   err: "",
   success: "",
 };
-const initUrl = "http://localhost:8080/user";
+const initUrl = "https://photography-portfolio-eryj.onrender.com/user";
 
 const ResetPassword = () => {
   const [data, setData] = useState(initialState);
