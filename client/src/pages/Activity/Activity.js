@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import "./activity.css";
 import axios from "axios";
 
-const FetchUrl = "http://localhost:8080/activity/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/activity/";
 
 const Activity = () => {
   const [, setImageSrc] = useState([]);
