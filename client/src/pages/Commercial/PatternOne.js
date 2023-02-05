@@ -6,7 +6,7 @@ import { PhotoProvider } from "react-photo-view";
 import "./patternOne.css";
 import axios from "axios";
 
-const FetchUrl = "http://localhost:8080/commercial/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/commercial/";
 
 const PatternOne = () => {
   const [, setImageSrc] = useState([]);
