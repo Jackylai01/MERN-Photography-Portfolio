@@ -7,7 +7,7 @@ import { PhotoProvider } from "react-photo-view";
 
 import "./product.css";
 
-const FetchUrl = "http://localhost:8080/product/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/product/";
 
 const Product = () => {
   const [, setImageSrc] = useState([]);
