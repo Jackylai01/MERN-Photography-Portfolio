@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { showErrMsg } from "../../utils/notification/Notification";
 import axios from "axios";
 
-const FetchUrl = "http://localhost:8080/profile/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/profile/";
 const About = () => {
   const [description, setDescription] = useState("");
   const [skill, setskill] = useState("");
