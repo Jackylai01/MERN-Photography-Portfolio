@@ -32,20 +32,19 @@ mongoose
   });
 
 //跨域設定
-const corsOptions = {
-  origin: [
-    "http://localhost:8080",
-    "http://localhost:3000",
-    "https://cloudinary.com/",
-    "https://photography-portfolio-eryj.onrender.com
-  ],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-};
+// // const corsOptions = {
+// //   origin: [
+// //     "http://localhost:8080",
+// //     "http://localhost:3000",
+// //     "https://cloudinary.com/",
+// //   ],
+// //   methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+// //   allowedHeaders: ["Content-Type", "Authorization"],
+// //   credentials: true,
+// // };
 
 //跨域請求
-app.use(cors(corsOptions));
+app.use(cors());
 
 //中間件
 app.use(express.json());
