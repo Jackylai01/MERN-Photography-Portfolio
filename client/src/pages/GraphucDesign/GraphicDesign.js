@@ -6,7 +6,7 @@ import axios from "axios";
 import "./graphicDesign.css";
 import { PhotoProvider } from "react-photo-view";
 
-const FetchUrl = "http://localhost:8080/graphicDesign/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/graphicDesign/";
 
 const GraphicDesign = () => {
   const [, setImageSrc] = useState([]);
