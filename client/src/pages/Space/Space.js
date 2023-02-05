@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import "./space.css";
 
-const FetchUrl = "http://localhost:8080/space/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/space/";
 
 const Space = () => {
   const [, setImageSrc] = useState([]);
