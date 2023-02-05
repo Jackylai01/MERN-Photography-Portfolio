@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.swiperWrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiperSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .prev,
+.swiper .next {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #0005;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
+  display: none;
+}
+
+.swiper .prev {
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper .next {
+  right: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper:hover .prev,
+.swiper:hover .next {
+  display: block;
+}
+
+.swiperPagination {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.swiperPagination span {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiperPagination span.active {
+  background-color: cornflowerblue;
+}
+
+.swiper.dragging {
+  cursor: -webkit-grab;
+  cursor: grab;
+  /* 抓住 */
+}
+
+.swiper.dragging img {
+  pointer-events: none;
+}
+/*# sourceMappingURL=swiper.css.map */

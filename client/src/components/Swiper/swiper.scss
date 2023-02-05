@@ -1,0 +1,78 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.swiperWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.swiperSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .prev,
+.swiper .next {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0005;
+  user-select: none;
+  color: white;
+  display: none;
+}
+
+.swiper .prev {
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper .next {
+  right: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper:hover .prev,
+.swiper:hover .next {
+  display: block;
+}
+
+.swiperPagination {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.swiperPagination span {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiperPagination span.active {
+  background-color: cornflowerblue;
+}
+
+.swiper.dragging {
+  cursor: grab; /* 抓住 */
+}
+
+.swiper.dragging img {
+  pointer-events: none;
+}

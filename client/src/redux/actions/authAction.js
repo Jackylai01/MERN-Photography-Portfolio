@@ -1,0 +1,35 @@
+import ACTIONS from "./index";
+import axios from "axios";
+
+export const dispatchLogin = () => {
+  return {
+    type: ACTIONS.LOGIN,
+  };
+};
+
+export const fetchUser = async (token) => {
+  const res = await axios.get("http://localhost:8080/user/infor", {
+    headers: { Authorization: token },
+  });
+  return res;
+};
+
+export const editProfile = async (token, id) => {
+  const res = await axios.put(
+    `http://localhost:8080/profile/updateProfile/${id}`,
+    {
+      headers: { Authorization: token },
+    }
+  );
+  return res;
+};
+
+export const dispatchGetUser = (res) => {
+  return {
+    type: ACTIONS.GET_USER,
+    payload: {
+      user: res.data,
+      isAdmin: res.data.role === 1 ? true : false,
+    },
+  };
+};

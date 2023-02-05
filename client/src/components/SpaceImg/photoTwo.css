@@ -1,0 +1,46 @@
+.gridcontainer {
+  max-width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  position: relative;
+}
+
+.gridcontainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.height {
+  grid-row: span 2;
+}
+
+.width {
+  grid-column: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.trash {
+  position: absolute;
+  top: 0px;
+  color: white;
+  left: 0px;
+  cursor: pointer;
+}
+
+.trash:hover {
+  color: orangered;
+}
+/*# sourceMappingURL=photoTwo.css.map */

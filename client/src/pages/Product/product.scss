@@ -1,0 +1,26 @@
+.patternContainer {
+  display: flex;
+  justify-content: center;
+
+  .commercialContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    .upload {
+      border: none;
+    }
+
+    .SubmitPhoto {
+      color: white;
+      background-color: rgb(84, 124, 90);
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 1rem 0rem;
+    }
+    .SubmitPhoto:hover {
+      background-color: rgb(253, 108, 108);
+    }
+  }
+}

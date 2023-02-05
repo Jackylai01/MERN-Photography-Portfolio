@@ -1,0 +1,45 @@
+.mainPhotoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+
+  .right {
+    align-items: center;
+    display: flex;
+
+    .caption {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 2rem;
+      }
+    }
+    img {
+      min-width: 50%;
+      min-height: 100vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .mainPhotoContainer {
+    flex-direction: row;
+    .right {
+      flex-direction: column;
+      img {
+        min-width: 100%;
+        min-height: 50vh;
+      }
+    }
+  }
+}

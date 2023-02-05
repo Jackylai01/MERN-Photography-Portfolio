@@ -1,0 +1,79 @@
+.MainPhotowrap {
+  max-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.item:hover .content {
+  opacity: 1;
+}
+
+.item:hover h2::after {
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: 800px;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0 50px;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.item h2 {
+  color: #00eaff;
+  font-size: 32px;
+}
+
+.item p {
+  color: #fff;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .MainPhotowrap {
+    display: none;
+  }
+}
+/*# sourceMappingURL=mainPhoto.css.map */

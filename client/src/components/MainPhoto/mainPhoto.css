@@ -1,0 +1,72 @@
+.mainPhotoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+
+.mainPhotoContainer .right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainPhotoContainer .right .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainPhotoContainer .right .caption h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.mainPhotoContainer .right .caption p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+.mainPhotoContainer .right img {
+  min-width: 50%;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1080px) {
+  .mainPhotoContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mainPhotoContainer .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainPhotoContainer .right img {
+    min-width: 100%;
+    min-height: 50vh;
+  }
+}
+/*# sourceMappingURL=mainPhoto.css.map */
