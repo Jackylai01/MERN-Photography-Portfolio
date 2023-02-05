@@ -3,7 +3,7 @@ import { PhotoView } from "react-photo-view";
 import { useSelector } from "react-redux";
 import axios from "axios";
 
-const FetchUrl = "http://localhost:8080/";
+const FetchUrl = "https://photography-portfolio-eryj.onrender.com/";
 
 export const Photo = ({ product }) => {
   const token = useSelector((state) => state.token);
