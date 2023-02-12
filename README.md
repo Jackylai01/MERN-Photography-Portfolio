@@ -67,7 +67,10 @@ client/   前端
 ├── public  
     ├── index.js       //渲染後要覆蓋的根目錄
 └── src
-    ├── components     //組件
+    ├── components     //組件管理
+    └── api            //管理Fetch API 
+    └── public/img     //管理靜態圖片 
+    └── utils          //中間件驗證處理、404頁面製作
     └── pages          //頁面
     └── Redux          //狀態管理
 └── App.js             //路由管理
