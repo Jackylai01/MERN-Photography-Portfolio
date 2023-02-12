@@ -96,7 +96,7 @@ client/   前端
 * emailjs-com-綁定自己的信箱，接受網站post 請求的內容，被寄送到信箱
 * axios-Fetch API套件
 * react-redux-狀態管理(原生)
-* uuid-生成一連串加密代碼
+* uuid-生成一連串加密代碼，建立識別碼
 * react-router-domV6-路由管理(App.js)
 
 
