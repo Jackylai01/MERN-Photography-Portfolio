@@ -56,11 +56,11 @@ backend/   後端
     └── cloudinary.js              //第三方圖片存放平台API設定
     └── multer.js                  //node.js 的中間件-處理multipart/form-data類型的表格數據，主要用於上傳文件、圖片，這裡透過Multer進行處理後，再上傳到cloudinary
 ├── index.js                       //主目錄、路由中間件管理、跨域設定、連結MongoDB資料庫設定    
-├── .env               //環境變數-隱藏相關私密資訊
-├── .gitignore         //設定不上傳之檔案
-├── .package-lock.json //鎖定版本
-├── .package.json      //紀錄專案中所使用的所有套件與版本
-├── .validation.js     //表單驗證-可由前端做或後端，這裡採用後端製作，透過Joi套件生成客製化驗證資訊，再引入路由控制設定
+├── .env                           //環境變數-隱藏相關私密資訊
+├── .gitignore                     //設定不上傳之檔案
+├── .package-lock.json             //鎖定版本
+├── .package.json                  //紀錄專案中所使用的所有套件與版本
+├── .validation.js                 //表單驗證-可由前端做或後端，這裡採用後端製作，透過Joi套件生成客製化驗證資訊，再引入路由控制設定
 
 
 client/   前端
@@ -79,3 +79,30 @@ client/   前端
 
 
 ```
+##
+後端主要套件使用說明
+##
+
+* bcrypt-密碼加密，透過saltRounds 進行加鹽改變原始的字符串，使其生成的散列結果產生變化
+* cloudinary-第三方圖片資料庫，將圖片放到此資料庫進行管理，並將每張圖片的url儲存在MongdDB的資料庫，減少MongoDB的容量，免費版Cloudinary有25G的儲存空間
+* multer-node套件，管理上傳文件、圖片之前的設定，這裡採用限定jpg、jpeg、png等格式限制，以及上傳圖片的尺寸限制
+* joi-後端表單驗證套件，用於登入、註冊時的驗證設定
+* jsonwebtoken-簡稱jwt生成套件，管理使用者身分的Token功能，以及使用者登入驗證功能
+* cookie-session-生成相關設定的cookie傳入前端
+* cors-跨域設定，限制路由、cookie傳入、簡單請求與非簡單請求等設定
+##
+前端主要套件使用說明(React18)
+##
+* emailjs-com-綁定自己的信箱，接受網站post 請求的內容，被寄送到信箱
+* axios-Fetch API套件
+* react-redux-狀態管理(原生)
+* uuid-生成一連串加密代碼
+* react-router-domV6-路由管理(App.js)
+
+
+
+
+
+
+
+
